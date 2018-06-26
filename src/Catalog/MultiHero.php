@@ -12,7 +12,7 @@ class MultiHero extends Hero
      */
     public function __construct(array $heroes)
     {
-        if (!is_array($heroes) || count($heroes) > 2) {
+        if (!is_array($heroes) || count($heroes) !== 2) {
             throw new \Exception('MultiHero is a combination of 2 heroes.');
         }
 
